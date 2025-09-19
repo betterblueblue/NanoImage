@@ -38,3 +38,5 @@ coverage.xml
 # Tox
 .tox/
 
+
+.env
