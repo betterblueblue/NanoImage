@@ -1,0 +1,15 @@
+{
+  "id": "276c29ea-2309-42b7-b86f-31862bc1717d",
+  "type": "enhance",
+  "status": "finished",
+  "progress": 100,
+  "params": {
+    "size": "512x512",
+    "n": 1
+  },
+  "input_path": "storage\\uploads\\276c29ea-2309-42b7-b86f-31862bc1717d\\test.png",
+  "results": [
+    "/files/results/276c29ea-2309-42b7-b86f-31862bc1717d/result_1.png"
+  ],
+  "error": null
+}

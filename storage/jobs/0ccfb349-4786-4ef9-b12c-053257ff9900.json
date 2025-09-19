@@ -1,0 +1,13 @@
+{
+  "id": "0ccfb349-4786-4ef9-b12c-053257ff9900",
+  "type": "enhance",
+  "status": "failed",
+  "progress": 5,
+  "params": {
+    "size": "512x512",
+    "n": 1
+  },
+  "input_path": "storage\\uploads\\0ccfb349-4786-4ef9-b12c-053257ff9900\\test.png",
+  "results": [],
+  "error": "No module named 'google'"
+}

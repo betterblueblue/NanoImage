@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>项目说明 · README</title>
+  <!-- GitHub 风格的 Markdown 样式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.5.1/github-markdown-light.min.css">
+  <!-- 代码高亮样式（GitHub 主题） -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css">
+  <style>
+    :root{
+      --border:#e5e7eb;
+      --muted:#475569;
+      --primary:#2563eb;
+    }
+    body{font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;color:#0f172a}
+    .container{max-width:1100px; margin:24px auto; padding:0 16px; display:grid; grid-template-columns: 1fr; gap:16px}
+    header{display:flex; align-items:center; justify-content:space-between; gap:12px; border-bottom:1px solid var(--border); padding-bottom:8px}
+    header .actions a{color:var(--primary); text-decoration:none}
+    .content-wrap{display:grid; grid-template-columns: 1fr; gap:24px}
+    .markdown-body{box-sizing:border-box; width:100%; padding:16px 0}
+    aside#toc{position:sticky; top:16px; align-self:start; border:1px solid var(--border); border-radius:10px; padding:12px; background:#fff}
+    #toc h4{margin:0 0 8px; font-size:12px; color:var(--muted)}
+    #toc ol{margin:0; padding-left:16px}
+    #toc a{color:#334155; text-decoration:none}
+    #toc a:hover{color:var(--primary)}
+    .anchor{visibility:hidden; margin-left:.25em; color:#94a3b8}
+    .anchor:hover{color:#64748b}
+    .markdown-body h1:hover .anchor,
+    .markdown-body h2:hover .anchor,
+    .markdown-body h3:hover .anchor{visibility:visible}
+    /* 宽屏时展示右侧目录 */
+    @media (min-width: 1024px){
+      .content-wrap{grid-template-columns: minmax(0, 1fr) 280px}
+      .markdown-body{padding-right:24px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="font-weight:600">项目说明 · README</div>
+      <div class="actions"><a href="/web/">← 返回上传页</a></div>
+    </header>
+
+    <div class="content-wrap">
+      <article id="md" class="markdown-body">加载中...</article>
+      <aside id="toc" aria-label="目录" hidden>
+        <h4>目录</h4>
+        <nav id="toc-list"></nav>
+      </aside>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/common.min.js"></script>
+  <script>
+    // 代码高亮集成
+    marked.setOptions({
+      highlight: function(code, lang){
+        try { return hljs.highlight(code, {language: lang}).value; }
+        catch(e){ try { return hljs.highlightAuto(code).value; } catch(_) { return code; } }
+      }
+    });
+
+    const mdEl = document.getElementById('md');
+    fetch('/README.md').then(r=>r.text()).then(text=>{
+      const html = marked.parse(text);
+      mdEl.innerHTML = html;
+      // 追加锚点并构建 TOC
+      buildAnchorsAndToc();
+    }).catch(()=>{ mdEl.textContent = 'README 加载失败'; });
+
+    function slugify(str){
+      return str.toLowerCase().trim().replace(/[^\w\u4e00-\u9fa5\-\s]/g,'').replace(/\s+/g,'-');
+    }
+
+    function buildAnchorsAndToc(){
+      const headings = mdEl.querySelectorAll('h1, h2, h3');
+      if(!headings.length) return;
+      const used = new Map();
+      const toc = [];
+      headings.forEach(h=>{
+        const level = parseInt(h.tagName.substring(1));
+        const base = slugify(h.textContent || 'section');
+        const count = (used.get(base) || 0) + 1; used.set(base, count);
+        const id = count>1 ? `${base}-${count}` : base;
+        h.id = id;
+        const a = document.createElement('a'); a.href = `#${id}`; a.textContent = '§'; a.className='anchor';
+        h.appendChild(a);
+        toc.push({level, id, text: h.textContent.replace('§','').trim()});
+      });
+      renderToc(toc);
+    }
+
+    function renderToc(items){
+      const tocAside = document.getElementById('toc');
+      const tocList = document.getElementById('toc-list');
+      if(!items.length){ tocAside.hidden = true; return; }
+      // 简单两级列表
+      let html = '<ol>'; let last = 1;
+      items.forEach(it=>{
+        const lvl = Math.min(3, Math.max(1, it.level));
+        while(last < lvl){ html += '<ol>'; last++; }
+        while(last > lvl){ html += '</ol>'; last--; }
+        html += `<li><a href="#${it.id}">${it.text}</a></li>`;
+      });
+      while(last>1){ html += '</ol>'; last--; }
+      html += '</ol>';
+      tocList.innerHTML = html;
+      tocAside.hidden = false;
+    }
+  </script>
+</body>
+</html>
+

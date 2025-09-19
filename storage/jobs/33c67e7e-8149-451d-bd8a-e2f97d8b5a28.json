@@ -1,0 +1,20 @@
+{
+  "id": "33c67e7e-8149-451d-bd8a-e2f97d8b5a28",
+  "type": "hairstyle_grid",
+  "status": "finished",
+  "progress": 100,
+  "params": {},
+  "input_path": "storage\\uploads\\33c67e7e-8149-451d-bd8a-e2f97d8b5a28\\IMG_20241114_081524.jpg",
+  "results": [
+    "/files/results/33c67e7e-8149-451d-bd8a-e2f97d8b5a28/result_1.png",
+    "/files/results/33c67e7e-8149-451d-bd8a-e2f97d8b5a28/result_2.png",
+    "/files/results/33c67e7e-8149-451d-bd8a-e2f97d8b5a28/result_3.png",
+    "/files/results/33c67e7e-8149-451d-bd8a-e2f97d8b5a28/result_4.png",
+    "/files/results/33c67e7e-8149-451d-bd8a-e2f97d8b5a28/result_5.png",
+    "/files/results/33c67e7e-8149-451d-bd8a-e2f97d8b5a28/result_6.png",
+    "/files/results/33c67e7e-8149-451d-bd8a-e2f97d8b5a28/result_7.png",
+    "/files/results/33c67e7e-8149-451d-bd8a-e2f97d8b5a28/result_8.png",
+    "/files/results/33c67e7e-8149-451d-bd8a-e2f97d8b5a28/result_9.png"
+  ],
+  "error": null
+}

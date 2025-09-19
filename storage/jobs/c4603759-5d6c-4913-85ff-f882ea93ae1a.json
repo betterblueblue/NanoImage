@@ -1,0 +1,20 @@
+{
+  "id": "c4603759-5d6c-4913-85ff-f882ea93ae1a",
+  "type": "hairstyle_grid",
+  "status": "finished",
+  "progress": 100,
+  "params": {},
+  "input_path": "storage\\uploads\\c4603759-5d6c-4913-85ff-f882ea93ae1a\\ComfyUI_00003_.png",
+  "results": [
+    "/files/results/c4603759-5d6c-4913-85ff-f882ea93ae1a/result_1.png",
+    "/files/results/c4603759-5d6c-4913-85ff-f882ea93ae1a/result_2.png",
+    "/files/results/c4603759-5d6c-4913-85ff-f882ea93ae1a/result_3.png",
+    "/files/results/c4603759-5d6c-4913-85ff-f882ea93ae1a/result_4.png",
+    "/files/results/c4603759-5d6c-4913-85ff-f882ea93ae1a/result_5.png",
+    "/files/results/c4603759-5d6c-4913-85ff-f882ea93ae1a/result_6.png",
+    "/files/results/c4603759-5d6c-4913-85ff-f882ea93ae1a/result_7.png",
+    "/files/results/c4603759-5d6c-4913-85ff-f882ea93ae1a/result_8.png",
+    "/files/results/c4603759-5d6c-4913-85ff-f882ea93ae1a/result_9.png"
+  ],
+  "error": null
+}

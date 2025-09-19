@@ -1,0 +1,15 @@
+{
+  "id": "c5aa3454-cfc4-4bc3-bf5b-c5b243243d99",
+  "type": "enhance",
+  "status": "finished",
+  "progress": 100,
+  "params": {
+    "size": "512x512",
+    "n": 1
+  },
+  "input_path": "storage\\uploads\\c5aa3454-cfc4-4bc3-bf5b-c5b243243d99\\test.png",
+  "results": [
+    "/files/results/c5aa3454-cfc4-4bc3-bf5b-c5b243243d99/result_1.png"
+  ],
+  "error": null
+}

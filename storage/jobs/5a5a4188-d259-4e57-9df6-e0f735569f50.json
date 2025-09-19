@@ -1,0 +1,12 @@
+{
+  "id": "5a5a4188-d259-4e57-9df6-e0f735569f50",
+  "type": "id_photo",
+  "status": "finished",
+  "progress": 100,
+  "params": {},
+  "input_path": "storage\\uploads\\5a5a4188-d259-4e57-9df6-e0f735569f50\\IMG_20241114_081524.jpg",
+  "results": [
+    "/files/results/5a5a4188-d259-4e57-9df6-e0f735569f50/result_1.png"
+  ],
+  "error": null
+}

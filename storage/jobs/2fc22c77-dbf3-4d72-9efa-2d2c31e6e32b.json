@@ -1,0 +1,13 @@
+{
+  "id": "2fc22c77-dbf3-4d72-9efa-2d2c31e6e32b",
+  "type": "enhance",
+  "status": "finished",
+  "progress": 100,
+  "params": {
+    "size": "512x512",
+    "n": 1
+  },
+  "input_path": "storage\\uploads\\2fc22c77-dbf3-4d72-9efa-2d2c31e6e32b\\test.png",
+  "results": [],
+  "error": null
+}

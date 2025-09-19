@@ -1,0 +1,15 @@
+{
+  "id": "b21334a7-f9b5-41c8-951f-01d35fe1b599",
+  "type": "enhance",
+  "status": "finished",
+  "progress": 100,
+  "params": {
+    "size": "512x512",
+    "n": 1
+  },
+  "input_path": "storage\\uploads\\b21334a7-f9b5-41c8-951f-01d35fe1b599\\test.png",
+  "results": [
+    "/files/results/b21334a7-f9b5-41c8-951f-01d35fe1b599/result_1.png"
+  ],
+  "error": null
+}

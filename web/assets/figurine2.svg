@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="260" viewBox="0 0 440 260" fill="none">
+  <defs>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+  <rect width="440" height="260" rx="16" fill="#F8FAFC"/>
+  <g transform="translate(40,36)">
+    <rect x="0" y="0" width="360" height="188" rx="12" fill="#fff" stroke="#E5E7EB"/>
+    <rect x="24" y="24" width="112" height="136" rx="12" fill="#ECFDF5" stroke="#D1FAE5"/>
+    <circle cx="80" cy="80" r="28" fill="url(#a)"/>
+    <rect x="160" y="34" width="160" height="24" rx="6" fill="#F1F5F9"/>
+    <rect x="160" y="68" width="160" height="12" rx="6" fill="#E2E8F0"/>
+    <rect x="160" y="88" width="120" height="12" rx="6" fill="#E2E8F0"/>
+    <rect x="160" y="120" width="72" height="28" rx="8" fill="#DCFCE7"/>
+  </g>
+  <text x="24" y="24" font-size="12" fill="#64748B">插画转手办 · 示例</text>
+</svg>
+

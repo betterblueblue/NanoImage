@@ -1,0 +1,12 @@
+{
+  "id": "0d0cfe71-ad5a-42c9-8de7-2d9a55df833e",
+  "type": "enhance",
+  "status": "finished",
+  "progress": 100,
+  "params": {},
+  "input_path": "storage\\uploads\\0d0cfe71-ad5a-42c9-8de7-2d9a55df833e\\mmexport1687490856806.jpg",
+  "results": [
+    "/files/results/0d0cfe71-ad5a-42c9-8de7-2d9a55df833e/result_1.png"
+  ],
+  "error": null
+}

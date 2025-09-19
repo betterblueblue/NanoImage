@@ -1,0 +1,12 @@
+{
+  "id": "fb40c04e-d080-4e33-9dca-bcf72bfc9b81",
+  "type": "figurine",
+  "status": "finished",
+  "progress": 100,
+  "params": {},
+  "input_path": "storage\\uploads\\fb40c04e-d080-4e33-9dca-bcf72bfc9b81\\readpictureaction.jpg",
+  "results": [
+    "/files/results/fb40c04e-d080-4e33-9dca-bcf72bfc9b81/result_1.png"
+  ],
+  "error": null
+}

@@ -1,0 +1,12 @@
+{
+  "id": "98e392de-a527-485c-a61a-74d21fbe05b3",
+  "type": "figurine",
+  "status": "finished",
+  "progress": 100,
+  "params": {},
+  "input_path": "storage\\uploads\\98e392de-a527-485c-a61a-74d21fbe05b3\\ComfyUI_00003_.png",
+  "results": [
+    "/files/results/98e392de-a527-485c-a61a-74d21fbe05b3/result_1.png"
+  ],
+  "error": null
+}

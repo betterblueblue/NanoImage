@@ -1,0 +1,12 @@
+{
+  "id": "f941a58d-a671-4d6f-b694-984119e2ca58",
+  "type": "figurine",
+  "status": "finished",
+  "progress": 100,
+  "params": {},
+  "input_path": "storage\\uploads\\f941a58d-a671-4d6f-b694-984119e2ca58\\IMG_20241114_081524.jpg",
+  "results": [
+    "/files/results/f941a58d-a671-4d6f-b694-984119e2ca58/result_1.png"
+  ],
+  "error": null
+}

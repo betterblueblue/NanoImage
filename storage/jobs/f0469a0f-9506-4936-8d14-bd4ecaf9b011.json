@@ -1,0 +1,13 @@
+{
+  "id": "f0469a0f-9506-4936-8d14-bd4ecaf9b011",
+  "type": "enhance",
+  "status": "finished",
+  "progress": 100,
+  "params": {
+    "size": "512x512",
+    "n": 1
+  },
+  "input_path": "storage\\uploads\\f0469a0f-9506-4936-8d14-bd4ecaf9b011\\test.png",
+  "results": [],
+  "error": null
+}
